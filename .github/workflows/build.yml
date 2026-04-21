@@ -42,7 +42,7 @@ jobs:
 
     # --- Clone the latest commit ---
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
       with:
         fetch-tags: true
         submodules: recursive
@@ -82,14 +82,14 @@ jobs:
 
     - name: Upload Linux amd64 Artifacts
       # *.deb *.rpm *.tgz
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: openhantek_${{ steps.config_git.outputs.git_describe }}_linux_amd64
         path: ${{github.workspace}}/build/packages/*
 
     - name: Upload Linux amd64 Release Assets
       if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v3
       with:
         prerelease: true
         files: ./build/packages/*
@@ -107,7 +107,7 @@ jobs:
 
     # --- Clone the latest commit ---
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
       with:
         fetch-tags: true
         submodules: recursive
@@ -147,14 +147,14 @@ jobs:
 
     - name: Upload Linux arm64 Artifacts
       # *.deb *.rpm *.tgz
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: openhantek_${{ steps.config_git.outputs.git_describe }}_linux_arm64
         path: ${{github.workspace}}/build/packages/*
 
     - name: Upload Linux arm64 Release Assets
       if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v3
       with:
         prerelease: true
         files: ./build/packages/*
@@ -172,7 +172,7 @@ jobs:
 
     # --- Clone the latest commit ---
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
       with:
         fetch-tags: true
         submodules: recursive
@@ -235,14 +235,14 @@ jobs:
         fi
 
     - name: Upload macOS intel Artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: openhantek_${{ steps.config_git.outputs.git_describe }}_macos_amd64
         path: ${{github.workspace}}/build/packages/*
 
     - name: Upload macOS intel Release Assets
       if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v3
       with:
         prerelease: true
         files: ./build/packages/*
@@ -260,7 +260,7 @@ jobs:
 
     # --- Clone the latest commit ---
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
       with:
         fetch-tags: true
         submodules: recursive
@@ -323,14 +323,14 @@ jobs:
         fi
 
     - name: Upload macOS arm64 Artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: openhantek_${{ steps.config_git.outputs.git_describe }}_macos_arm64
         path: ${{github.workspace}}/build/packages/*
 
     - name: Upload macOS arm64 Release Assets
       if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v3
       with:
         prerelease: true
         files: ./build/packages/*
@@ -348,7 +348,7 @@ jobs:
 
     # --- Clone the latest commit ---
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v6
       with:
         fetch-tags: true
         submodules: recursive
@@ -389,14 +389,14 @@ jobs:
         ls -l packages
 
     - name: Upload Windows MSVC Artifacts
-      uses: actions/upload-artifact@v4
+      uses: actions/upload-artifact@v7
       with:
         name: openhantek_${{ steps.config_git.outputs.git_describe }}_msvc_x64
         path: ./build/packages/*.zip
 
     - name: Upload Windows MSVC Release Assets
       if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v3
       with:
         prerelease: true
         files: ./build/packages/*
@@ -418,7 +418,7 @@ jobs:
 
 #     # --- Clone the latest commit ---
 #     - name: Checkout
-#       uses: actions/checkout@v3
+#       uses: actions/checkout@v6
 #       with:
 #         fetch-tags: true
 #         submodules: recursive
@@ -466,14 +466,14 @@ jobs:
 #         ls -l ../packages
 
 #     - name: Upload Windows Artifacts
-#       uses: actions/upload-artifact@v4
+#       uses: actions/upload-artifact@v7
 #       with:
 #         name: openhantek_${{ steps.config_git.outputs.git_describe }}_mingw_amd64
 #         path: ./build/packages/*.zip
 
 #     - name: Upload Windows Release Assets
 #       if: startsWith(github.ref, 'refs/tags/')
-#       uses: softprops/action-gh-release@v1
+#       uses: softprops/action-gh-release@v3
 #       with:
 #         prerelease: true
 #         files: ./build/packages/*
