@@ -26,27 +26,27 @@
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="76"/>
         <source>Oscilloscope disconnected. Waiting for reconnect...</source>
-        <translation type="unfinished"></translation>
+        <translation>Verbindung getrennt, warte auf neue Verbindung...</translation>
     </message>
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="85"/>
         <source>Scanning for oscilloscope...</source>
-        <translation type="unfinished"></translation>
+        <translation>Suche nach Oszilloskop...</translation>
     </message>
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="94"/>
         <source>Oscilloscope reconnected</source>
-        <translation type="unfinished"></translation>
+        <translation>Oszilloskop wieder verbunden</translation>
     </message>
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="96"/>
         <source>Oscilloscope reconnect failed. Retrying...</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehler beim Verbinden, erneuter Versuch...</translation>
     </message>
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="168"/>
         <source>Rebinding oscilloscope...</source>
-        <translation type="unfinished"></translation>
+        <translation>Integriere das Oszilloskop...</translation>
     </message>
 </context>
 <context>
@@ -1765,7 +1765,7 @@
     <message>
         <location filename="../src/mainwindow.cpp" line="592"/>
         <source>Oscilloscope unavailable</source>
-        <translation type="unfinished"></translation>
+        <translation>Oszilloskop nicht verfügbar</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="644"/>
@@ -2558,7 +2558,7 @@
     <message>
         <location filename="../src/usb/scopedevice.cpp" line="72"/>
         <source>Couldn&apos;t open device: device is no longer available</source>
-        <translation type="unfinished"></translation>
+        <translation>Konnte Gerät nicht öffnen, nicht mehr verfügbar</translation>
     </message>
     <message>
         <location filename="../src/usb/scopedevice.cpp" line="85"/>

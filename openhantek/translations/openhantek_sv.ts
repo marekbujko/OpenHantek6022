@@ -26,27 +26,27 @@
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="76"/>
         <source>Oscilloscope disconnected. Waiting for reconnect...</source>
-        <translation type="unfinished"></translation>
+        <translation>Oscilloskopet har kopplats bort. Väntar på återanslutning...</translation>
     </message>
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="85"/>
         <source>Scanning for oscilloscope...</source>
-        <translation type="unfinished"></translation>
+        <translation>Söker efter oscilloskop...</translation>
     </message>
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="94"/>
         <source>Oscilloscope reconnected</source>
-        <translation type="unfinished"></translation>
+        <translation>Oscilloskopet har återanslutits</translation>
     </message>
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="96"/>
         <source>Oscilloscope reconnect failed. Retrying...</source>
-        <translation type="unfinished"></translation>
+        <translation>Återanslutningen av oscilloskopet misslyckades. Försöker igen...</translation>
     </message>
     <message>
         <location filename="../src/usb/devicereconnectionsupervisor.cpp" line="168"/>
         <source>Rebinding oscilloscope...</source>
-        <translation type="unfinished"></translation>
+        <translation>Återansluter oscilloskopet...</translation>
     </message>
 </context>
 <context>
@@ -1316,7 +1316,7 @@
     <message>
         <location filename="../src/mainwindow.cpp" line="592"/>
         <source>Oscilloscope unavailable</source>
-        <translation type="unfinished"></translation>
+        <translation>Oscilloskopet är inte tillgängligt</translation>
     </message>
     <message>
         <location filename="../src/mainwindow.cpp" line="644"/>
