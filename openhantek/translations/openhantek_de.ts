@@ -298,22 +298,27 @@
         <translation>Spannung</translation>
     </message>
     <message>
-        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="140"/>
+        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="138"/>
+        <source>Font weight (restart needed to apply the change)</source>
+        <translation>Schriftstärke (Neustart erforderlich für Änderung)</translation>
+    </message>
+    <message>
+        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="147"/>
         <source>Auto</source>
         <translation>Automatisch</translation>
     </message>
     <message>
-        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="140"/>
+        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="147"/>
         <source>Light</source>
         <translation>Hell</translation>
     </message>
     <message>
-        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="140"/>
+        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="147"/>
         <source>Dark</source>
         <translation>Dunkel</translation>
     </message>
     <message>
-        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="141"/>
+        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="148"/>
         <source>Theme (restart needed to apply the change)</source>
         <translation>Thema (Neustart erforderlich für Änderung)</translation>
     </message>
@@ -347,7 +352,7 @@
         <translation type="vanished">Exportiere Bilder mit Bildschirm-Farben</translation>
     </message>
     <message>
-        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="148"/>
+        <location filename="../src/configdialog/DsoConfigColorsPage.cpp" line="155"/>
         <source>Screen and Print Colors</source>
         <translation>Bildschirm- und Drucker-Farben   </translation>
     </message>
@@ -2820,88 +2825,98 @@
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/main.cpp" line="124"/>
-        <location filename="../src/main.cpp" line="165"/>
+        <location filename="../src/main.cpp" line="127"/>
+        <location filename="../src/main.cpp" line="168"/>
         <source>Show the international interface, do not translate</source>
         <translation>Internationale Version ohne Übersetzung</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="148"/>
+        <location filename="../src/main.cpp" line="151"/>
         <source>Load config file</source>
         <translation>Lade Konfigurationsdatei</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="149"/>
+        <location filename="../src/main.cpp" line="152"/>
         <source>File</source>
         <translation>Datei</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="152"/>
+        <location filename="../src/main.cpp" line="155"/>
         <source>Demo mode without scope HW</source>
         <translation>Demo-Modus ohne Hardware</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="155"/>
+        <location filename="../src/main.cpp" line="158"/>
         <source>Use OpenGL ES instead of OpenGL</source>
         <translation>Benutze OpenGL ES anstelle von OpenGL</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="157"/>
+        <location filename="../src/main.cpp" line="160"/>
         <source>Do not connect automatically</source>
         <translation>Nicht automatisch verbinden</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="160"/>
+        <location filename="../src/main.cpp" line="163"/>
         <source>Force OpenGL SL version 1.20</source>
         <translation>Erzwinge OpenGL SL Version 1.20</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="162"/>
+        <location filename="../src/main.cpp" line="165"/>
         <source>Force OpenGL SL version 1.50</source>
         <translation>Erzwinge OpenGL SL Version 1.50</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="167"/>
+        <location filename="../src/main.cpp" line="170"/>
         <source>Define the system font</source>
         <translation>Definiere die System-Schriftart</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="168"/>
+        <location filename="../src/main.cpp" line="171"/>
         <source>Font</source>
         <translation>Schriftart</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="172"/>
+        <location filename="../src/main.cpp" line="175"/>
         <source>Set the font size (default = %1, 0: automatic from dpi)</source>
         <translation>Wähle Schriftgröße (Standard = %1, 0: automatisch von Bildschirmauflösung)</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="174"/>
+        <location filename="../src/main.cpp" line="177"/>
         <source>Size</source>
         <translation>Größe</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="177"/>
+        <location filename="../src/main.cpp" line="181"/>
+        <source>Set the font weight (default = %1)</source>
+        <translation>Wähle Schriftstärke (Standard = %1)</translation>
+    </message>
+    <message>
+        <location filename="../src/main.cpp" line="183"/>
+        <source>Weight</source>
+        <translation>Stärke</translation>
+    </message>
+    <message>
+        <location filename="../src/main.cpp" line="186"/>
         <source>Set the font condensed value (default = %1)</source>
         <translation>Wähle schmalere Schrift (Standard : %1)</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="178"/>
+        <location filename="../src/main.cpp" line="187"/>
         <source>Condensed</source>
         <translation>Schmaler</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="181"/>
+        <location filename="../src/main.cpp" line="190"/>
         <source>Reset persistent settings, start with default</source>
         <translation>Zurücksetzen auf Standardwerte</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="184"/>
+        <location filename="../src/main.cpp" line="193"/>
         <source>Verbose tracing of program startup, ui and processing steps</source>
         <translation>Zeige Hinweise während des Programmstarts und der Verarbeitungsschritte</translation>
     </message>
     <message>
-        <location filename="../src/main.cpp" line="185"/>
+        <location filename="../src/main.cpp" line="194"/>
         <source>Level</source>
         <translation>Stufe</translation>
     </message>

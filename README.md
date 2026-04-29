@@ -44,6 +44,7 @@ OpenHantek6022 is a free software for **Hantek DSO6022** USB digital signal osci
   - SainSmart DDS120 (thx [msiegert](https://github.com/msiegert)) - this device has a different analog front end
  and uses the [slightly improved sigrok firmware](https://github.com/Ho-Ro/sigrok-firmware-fx2lafw), which has [some limitations](https://sigrok.org/wiki/SainSmart_DDS120/Info#Open-source_firmware_details)
  compared to the Hantek scopes (see [#69](https://github.com/OpenHantek/OpenHantek6022/issues/69#issuecomment-607341694)).
+ (Typically USB scopes with a max. sample rate of 48 MS/s (even if this rate works not reliable on most systems).
 
 * Demo mode is provided by the `-d` or `--demoMode` command line option.
 * Fully supported operating system: Linux; developed under debian stable (currently *bookworm*) for amd64 architecture.
@@ -87,7 +88,7 @@ A [little HW modification](docs/HANTEK6022_Frequency_Generator_Modification.pdf)
 * The dock views on the main window can be [customized](https://github.com/OpenHantek/OpenHantek6022/issues/161#issuecomment-799597664) by dragging them around and stacking them.
   This allows a minimum window size of 800*300 for old laptops or workstation computers.
 * All settings can be saved to a configuration file and loaded again.
-* French, German, Russian and Spanish localisation complete; Chinese, Polish and Swedish is updated regularily; Italian and Portuguese translation ongoing - [volunteers welcome](openhantek/translations/Translation_HowTo.md)!
+* French, German, Italien, Russian and Spanish localisation complete; Chinese, Polish and Swedish is updated regularily; Portuguese translation ongoing - [volunteers welcome](openhantek/translations/Translation_HowTo.md)!
 
 ## AC Coupling
 A [little HW modification](docs/HANTEK6022_AC_Modification.pdf) adds AC coupling. OpenHantek6022 supports this feature since v2.17-rc5 / FW0204.
@@ -187,6 +188,7 @@ The Raspberry Pi build uses OpenGL ES automatically, check also the [graphics dr
 
 ### USB Access
 USB access for the device is required (unless using demo mode):
+* Starting with version 3.4.1 the program detects USB disconnections and tries to reconnect instead of terminating with an error.
 * **_Linux/Unix_**  
 You need to copy the file `utils/udev_rules/60-openhantek.rules` to `/etc/udev/rules.d/` or `/usr/lib/udev/rules.d/` and replug your device.
 Note: If OpenHantek is installed from a `*.deb` or `*.rpm` package this file is installed automatically into `/usr/lib/udev/rules.d/`.

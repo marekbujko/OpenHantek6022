@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include "mainwindow.h"
-#include "ui_mainwindow.h"
+#include "src/ui_mainwindow.h"
 
 #include "HorizontalDock.h"
 #include "SpectrumDock.h"
